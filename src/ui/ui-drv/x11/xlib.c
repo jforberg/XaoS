@@ -370,7 +370,7 @@ xalloc_display (CONST char *s, int x, int y, xlibparam * params)
     new->lasty = 0;
     new->font_struct = (XFontStruct *) NULL;
 
-    if (params->fullscreen || params->rootwindow) {
+    if (True) { //params->fullscreen || params->rootwindow) {
         Window wtmp;
         int tmp;
         /* Get size of the root window */
